@@ -78,3 +78,16 @@ def mutate(brain):
     mutated_weights = [x * (np.random.sample() + 0.25) for x in [X[:][i] for X in weights for i in range(X.shape[0])]]
 
     return generate_offspring(np.array(mutated_weights))
+
+
+def evolve(brains):
+    '''
+    need to implement how the brain evolves
+    '''
+    return None
+
+
+def guess(brain, data):
+    '''
+    make the network predict an outcome based on the input
+    '''
