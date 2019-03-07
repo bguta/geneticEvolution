@@ -18,8 +18,8 @@ def generate(data_dim=input_dim, layers=Layers, neurons=Neurons):
 
     inputs:
         data dimension -> the vector input
-        layers -> the total number of layers for the network
-        neurons -> the number of neurons in each layers 0 to n
+        layers -> the total number of layers minus the input layer
+        neurons -> the number of neurons in hidden layer 1 to output layer
     output: a neural network
     '''
     brain = Sequential()
